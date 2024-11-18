@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block style%}
+<link rel="stylesheet" href="{% static 'css/alldata.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="alldata-edu">
+    <h3 class="h1-edu">{{data.education}}</h3>
+    <section id="resume-content">
+        
+        <h3>{{i.education}}</h3>
+    </section>
+</div>
+
+
+<button><a href="{% url 'home'%}" id="button-back">Back</a></button>
+{% endblock content %}
+

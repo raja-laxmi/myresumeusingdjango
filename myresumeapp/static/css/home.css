@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+.resume-block{
+    border: 4px solid rgb(193, 33, 238);
+    border-radius: 5%;
+    top: 15%;
+    right: 20%;
+    left: 30%;
+    height: 20vh;
+    width: 50%;
+    background:linear-gradient(blue,pink,gray,white);
+}
+.h1{
+    color: azure;
+}

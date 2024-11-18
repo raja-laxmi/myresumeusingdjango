@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact-of-me{
+    height: 1000px;
+    width: 800px;
+    left: 40%;
+    align-items: center;
+    display: inline;
+    position: absolute;
+    top:45%;
+    left:50%;
+    column-gap: 20px;
+    color:aliceblue;
+    /* background-color: aqua; */
+    height: 90vh;
+    width: 90vw;
+    background:linear-gradient(gray ,white,black);
+}
+h1{
+    color: aliceblue;
+}
+/* .whole{
+    
+} */
+
+.contact-of-me #emails{
+    height: 70px;
+    width: 50px;
+}
+.contact-of-me #contacts{
+    height: 70px;
+    width: 50px;
+}
+.contact-of-me #linkdins{
+    height: 70px;
+    width: 50px;
+}
+.contact-of-me #githup{
+    height: 70px;
+    width: 50px;
+}

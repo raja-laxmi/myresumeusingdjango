@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{%load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/home.css'%}">
+{% endblock   %}
+{% block content %}
+<h1 class="h1">welcome to homepage</h1>
+
+{%for i in resume %}
+
+<div class="resume-block">
+   <br>
+   <h1 id="hello"><a href="{% url 'myresumeapp' i.id%}"> {{i.title}}</a></h1><br>
+   <p>{{i.education|truncatewords:5}}<br><br></p>
+   <br>
+   <br>
+</div>
+{% endfor %}
+
+{% endblock content %}

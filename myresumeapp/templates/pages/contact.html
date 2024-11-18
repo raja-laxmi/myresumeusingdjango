@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/contact.css'%}">
+{% endblock   %}
+<h1>welcome to contact</h1>
+<br>
+<br>
+<div class="whole">
+<div class="contact-of-me">
+    <div class="contact">
+        <a href="tel: +91 6304437603"><img src="{% static 'images/contact.jpg'%}" id="contacts"></a>
+    </div>
+    <div class="email">
+        <a href="mailto:rajalaxmicreation01@gmail.com"><img src="{% static 'images/email.jpg'%}" id="emails"></a>
+    </div>
+    <div class="gitup">
+        <a href=""><img src="{% static 'images/gitup.jpg'%}" id="githup"></a>
+    </div>
+    <div class="linkdin">
+        <a href="www.linkedin.com/in/
+        r-s-raja-laxmi-94925a272
+        "><img src="{% static 'images/linkedln.jpg'%}" id="linkdins"></a>
+    </div>
+   
+</div>
+</div>
+
+{% endblock content%}

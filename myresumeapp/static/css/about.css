@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.education{
+    color: rgb(35, 37, 37);
+}
+.content{
+    color: rgb(43, 43, 41);
+    margin: auto;
+    padding: 30px;
+    height: 1200px;
+    width: 900px;
+    background-color: aliceblue;
+    border: 6px solid black;
+    column-gap: 10px;
+}
+#br{
+    border: 1px solid black;
+    height: 2px;
+    width: 1px;
+}

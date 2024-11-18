@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block  style%}
+<link rel="stylesheet" href="{% static 'css/about.css'%}">
+{% endblock  %}
+
+
+{% block content %}
+<div class="content">
+<h1>SUMMARY</h1>
+<h3><p>"Dedicated and detail-oriented web developer,i have created clone of NETFLIX with html and css.I learnt beginner cybersecurity from cisco presently learning advance level in cybersecurity from cybersecurity.And i have knowledge in javascript.I beleive that i can manage any suitation.i give my best and i try to give my best"</p></h3>
+<br>
+
+<h1>EDUCATIONAL BACKGROUND</h1>
+{% for item in about_data %}
+<h3>{{item.stream}}</h3>
+<h6>{{item.score}}</h6>
+<p>{{item.institute}}</p>
+
+{% endfor %}
+
+<h1>TECHNICAL SKILLS</h1>
+    {% for hard in hard_skill %}
+    <ul><li>{{hard}}</li></ul>   
+
+{% endfor %}
+
+<div class="softskill">
+    <h1>SOFTSKILLS</h1>
+    {% for soft in soft_skill %}
+    <ul><li>{{soft}}</li></ul>
+    {% endfor %}
+</div>
+<div class="acheivement">
+    <h1>ACHIEVEMENTS</h1>
+    {% for achieves in achievements_ofme %}
+    <ul><li><h2>{{achieves.acheive}}</h2></li></ul>
+    <h4>{{achieves.create}}</h4>
+    <h5>{{achieves.year}}</h5>
+    {% endfor %}
+</div>
+</div>
+{% endblock content %}
